@@ -49,11 +49,11 @@ function Reward(currMarketVal, prevMarketVal){
 
 for (i = 0; i < marketData.values.length; ++i) {
 	var reward = 0;
-	console.log("curr: " + marketData.values[i].y);
 	var currMarketVal = marketData.values[i].y;
+	console.log("curr: " + currMarketVal);
 	if(i > 0){
 		var prevMarketVal = marketData.values[i-1].y;
-		console.log("prev: " + marketData.values[i-1].y);
+		console.log("prev: " + prevMarketVal);
 	}
 
 	reward = Reward(currMarketVal, prevMarketVal);
